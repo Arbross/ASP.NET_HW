@@ -1,0 +1,23 @@
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\bin\Debug\net5.0\appsettings.Development.json
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\bin\Debug\net5.0\appsettings.json
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\bin\Debug\net5.0\Lesson 1. Calculator.exe
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\bin\Debug\net5.0\Lesson 1. Calculator.deps.json
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\bin\Debug\net5.0\Lesson 1. Calculator.runtimeconfig.json
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\bin\Debug\net5.0\Lesson 1. Calculator.runtimeconfig.dev.json
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\bin\Debug\net5.0\Lesson 1. Calculator.dll
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\bin\Debug\net5.0\ref\Lesson 1. Calculator.dll
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\bin\Debug\net5.0\Lesson 1. Calculator.pdb
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\obj\Debug\net5.0\Lesson 1. Calculator.csproj.AssemblyReference.cache
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\obj\Debug\net5.0\Lesson 1. Calculator.GeneratedMSBuildEditorConfig.editorconfig
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\obj\Debug\net5.0\Lesson 1. Calculator.AssemblyInfoInputs.cache
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\obj\Debug\net5.0\Lesson 1. Calculator.AssemblyInfo.cs
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\obj\Debug\net5.0\Lesson 1. Calculator.csproj.CoreCompileInputs.cache
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\obj\Debug\net5.0\Lesson 1. Calculator.MvcApplicationPartsAssemblyInfo.cache
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\obj\Debug\net5.0\staticwebassets\Lesson 1. Calculator.StaticWebAssets.Manifest.cache
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\obj\Debug\net5.0\staticwebassets\Lesson 1. Calculator.StaticWebAssets.xml
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\obj\Debug\net5.0\scopedcss\bundle\Lesson 1. Calculator.styles.css
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\obj\Debug\net5.0\Lesson 1. Calculator.RazorTargetAssemblyInfo.cache
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\obj\Debug\net5.0\Lesson 1. Calculator.dll
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\obj\Debug\net5.0\ref\Lesson 1. Calculator.dll
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\obj\Debug\net5.0\Lesson 1. Calculator.pdb
+E:\Victor\repos\Lesson 1. Calculator\Lesson 1. Calculator\obj\Debug\net5.0\Lesson 1. Calculator.genruntimeconfig.cache

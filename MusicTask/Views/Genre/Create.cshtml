@@ -1,0 +1,22 @@
+﻿@model Genre
+
+<div>
+    <form method="post" asp-action="Create">
+        <h2 class="mb-3">Create New Genre</h2>
+
+        <input asp-for="Id" hidden>
+        <div class="form-group row">
+            <label asp-for="Name" class="col-4"></label>
+            <input asp-for="Name" class="form-control col-8">
+            <span asp-validation-for="Name" class="offset-4 text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-6">
+                <input type="submit" onclick="validateInputs()" class="btn btn-info w-100" value="Create" />
+            </div>
+            <div class="col-6">
+                <a asp-controller="Song" asp-action="Index" class="btn btn-secondary w-100">Back</a>
+            </div>
+        </div>
+    </form>
+</div>

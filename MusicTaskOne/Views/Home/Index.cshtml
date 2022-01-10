@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Song>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container d-flex justify-content-between">
+    <div>
+        <h1 class="p-3">Song's List</h1>
+    </div>
+    <div>
+        <div class="mb-2 text-right">
+            <a asp-controller="Home" asp-action="Create" class="btn btn-primary">Create</a>
+        </div>
+    </div>
+</div>
+
+<div class="container d-flex">
+    @if (Model.Any())
+    {
+        @foreach (Song item in Model)
+        {
+            <div class="bg-light p-3 rounded m-1 align-items-center">
+                <div><h4><b>@item.Name</b></h4></div>
+                <div><p>@item.Performer</p></div>
+                <hr>
+                <div>Genre : @item.Genre</div>
+                <div>Year : @item.Year</div>
+                <hr>
+                <div>Text :<br>@item.Text</div>
+            </div>
+        }
+    }
+</div>

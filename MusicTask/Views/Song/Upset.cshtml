@@ -1,0 +1,69 @@
+﻿@model SongVM
+@{
+    var title = "Create a new song";
+}
+
+<form method="post" asp-action="Upset">
+    @if(Model.Song.Id != 0)
+    {
+        title = "Edit Song";
+        <input asp-for="Song.Id" hidden>
+    }
+    <h2 class="mb-3">@title</h2>
+
+    <div class="form-group row">
+        <label asp-for="Song.Name" class="col-4"></label>
+        <input asp-for="Song.Name" class="form-control col-8">
+        <span asp-validation-for="Song.Name" class="offset-4 text-danger"></span>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Song.Performer" class="col-4"></label>
+        <input asp-for="Song.Performer" class="form-control col-8">
+        <span asp-validation-for="Song.Performer" class="offset-4 text-danger"></span>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Song.Year" class="col-4"></label>
+        <input asp-for="Song.Year" class="form-control col-8">
+        <span asp-validation-for="Song.Year" class="offset-4 text-danger"></span>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Song.GenreId" class="col-4"></label>
+        <select asp-for="Song.GenreId" asp-items="@Model.Genres" class="form-control col-8">
+            <option selected disabled>---Select Genre---</option>
+        </select>
+        <span asp-validation-for="Song.GenreId" class="offset-4 text-danger"></span>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Song.Text" class="col-4"></label>
+        <input asp-for="Song.Text" class="form-control col-8">
+        <span asp-validation-for="Song.Text" class="offset-4 text-danger"></span>
+    </div>
+    <div class="form-group row d-flex justify-content-between">
+        <div class="col-6">
+            <div>
+                @{
+                    if (Model.Song.Id != 0)
+                    {
+                        // Update
+                        <input type="submit" class="btn btn-info w-100" value="Update">
+                    }
+                    else
+                    {
+                        // Create
+                        <input type="submit" class="btn btn-primary w-100" value="Create">
+                    }
+                }
+            </div>
+        </div>
+        <div class="col-6">
+            <a asp-action="Index" class="btn btn-secondary w-100">Back</a>
+        </div>
+    </div>
+</form>
+
+@section Scripts
+{
+    @{
+        <partial name="_ValidationScriptsPartial.cshtml" />
+    }
+}

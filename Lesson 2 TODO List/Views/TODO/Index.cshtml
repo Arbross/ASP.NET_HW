@@ -1,0 +1,62 @@
+﻿@model IEnumerable<TODO>
+
+@{
+    ViewData["Title"] = "TODO";
+}
+
+<div class="container d-flex justify-content-between">
+    <div>
+        <h1 class="p-3">TODO List</h1>
+    </div>
+    <div>
+        <div class="mb-2 text-right">
+            <a asp-controller="TODO" asp-action="Upset" class="btn btn-primary">Create</a>
+        </div>
+    </div>
+</div>
+
+<div class="container d-inline-flex">
+    @if (Model.Any())
+    {
+        @foreach (TODO item in Model)
+        {
+            <div class="bg-light p-3 rounded m-1 align-items-center">
+                <div><h4><b>@item.Header</b></h4></div>
+                <div><p>@item.Doing</p></div>
+                <hr>
+                <div>Id : @item.Id</div>
+                <div>Finish date : @item.FinishDate.ToLongDateString()</div>
+                <div>Username : @item.Username</div>
+                <hr>
+                @if (item.Status == Status.FINISHED)
+                {
+                    <div class="bg-success text-white p-1">Status : @item.Status</div>
+                }
+                @if (item.Status == Status.AWAITING)
+                {
+                    <div class="bg-warning text-white p-1">Status : @item.Status</div>
+                }
+                @if (item.Status == Status.RETURNED)
+                {
+                    <div class="bg-danger text-white p-1">Status : @item.Status</div>
+                }
+                @if (item.Status == Status.WORKING)
+                {
+                    <div class="bg-info text-white p-1">Status : @item.Status</div>
+                }
+                <hr>
+                <div class="d-flex justify-content-between">
+                    <div class="mb-2 text-right m-1">
+                        <a asp-controller="TODO" asp-action="Returned" asp-route-id="@item.Id" class="btn btn-danger">Returned</a>
+                    </div>
+                    <div class="mb-2 text-right m-1">
+                        <a asp-controller="TODO" asp-action="Working" asp-route-id="@item.Id" class="btn btn-secondary">WORKING</a>
+                    </div>
+                    <div class="mb-2 text-right m-1">
+                        <a asp-controller="TODO" asp-action="Complete" asp-route-id="@item.Id" class="btn btn-info">Complete</a>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>

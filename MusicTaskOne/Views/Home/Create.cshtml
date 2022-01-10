@@ -1,0 +1,54 @@
+﻿@model MusicTaskOne.Models.Song
+
+<div>
+    <form method="post" asp-action="Create">
+        <h2 class="mb-3">Create a new song</h2>
+
+        <div class="form-group row">
+            <label asp-for="Name" class="col-4"></label>
+            <input asp-for="Name" class="form-control col-8">
+            <span asp-validation-for="Name" class="offset-4 text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Performer" class="col-4"></label>
+            <input asp-for="Performer" class="form-control col-8">
+            <span asp-validation-for="Performer" class="offset-4 text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Genre" class="col-4"></label>
+            <select asp-for="Genre" asp-items="Html.GetEnumSelectList<Genre>()" class="form-control col-6">
+                <option selected="selected" value="Select" disabled>---Select---</option>
+            </select>
+            <div class="col-2">
+                <a asp-action="Index" class="btn btn-info w-100 pl-2 pr-2">Add</a>
+            </div>
+            <span asp-validation-for="Genre" class="offset-4 text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Year" class="col-4"></label>
+            <input asp-for="Year" class="form-control col-8">
+            <span asp-validation-for="Year" class="offset-4 text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Text" class="col-4"></label>
+            <input asp-for="Text" class="form-control col-8">
+            <span asp-validation-for="Text" class="offset-4 text-danger"></span>
+        </div>  
+        <div class="form-group row d-flex justify-content-between">
+            <div class="col-6">
+                <input type="submit" class="btn btn-success w-100" value="Create" asp-action="Create">
+            </div>
+            <div class="col-6">
+                <a asp-action="Index" class="btn btn-info w-100">Back</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts
+{
+    @{
+        <partial name="_ValidationScriptsPartial.cshtml" />
+    }
+}
+
